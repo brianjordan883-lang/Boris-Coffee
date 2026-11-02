@@ -146,7 +146,7 @@ const lightboxCloseButton = document.querySelector(".lightbox-close");
 
 const mapFrame = document.querySelector(".map-frame iframe");
 const contactCards = document.querySelectorAll(".contact-card");
-let activeMapPoint = "42.867248,74.605111";
+let activeMapPoint = "Boris Coffee and Bakery, проспект Эркиндик 14, Бишкек";
 
 function setLanguage(language) {
   currentLanguage = language;
@@ -202,7 +202,7 @@ function updateMap(point) {
   activeMapPoint = point;
 
   const newSource =
-    "https://maps.google.com/maps?q=" + point +
+    "https://maps.google.com/maps?q=" + encodeURIComponent(point) +
     "&z=16&hl=" + currentLanguage + "&output=embed";
 
   if (mapFrame && mapFrame.src !== newSource) {
