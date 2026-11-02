@@ -20,6 +20,7 @@ const english = {
   heroMap: "Find us ↓",
   heroAddress: "Bishkek, 14 Erkindik Boulevard",
   coffeeToGo: "Coffee to go from",
+  altHero: "A sunlit corner by the window with flowers at Boris",
 
   // О нас
   aboutLabel: "COME FOR THE COFFEE — STAY FOR THE ATMOSPHERE",
