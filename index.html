@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Boris Coffee &amp; Bakery — кофейня в Бишкеке</title>
+  <meta
+    name="description"
+    content="Boris Coffee & Bakery — свежий кофе, выпечка, завтраки и домашняя кухня в центре Бишкека. Бульвар Эркиндик, 14."
+  >
+  <meta name="theme-color" content="#211A16">
+
+  <!-- Иконка сайта -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Превью для WhatsApp, Telegram, Instagram, Facebook.
+       После публикации замените og-image.jpg на полный адрес,
+       например https://boris-coffee.vercel.app/og-image.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Boris Coffee & Bakery">
+  <meta property="og:title" content="Boris Coffee & Bakery — кофейня в Бишкеке">
+  <meta property="og:description" content="Свежий кофе, выпечка, завтраки и домашняя кухня. Бульвар Эркиндик, 14.">
+  <meta property="og:image" content="og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ru_RU">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header class="header" id="top">
+    <a class="logo" href="#top" aria-label="Boris Coffee and Bakery">
+      BORIS
+      <span>COFFEE &amp; BAKERY</span>
+    </a>
+
+    <button
+      class="mobile-menu-button"
+      type="button"
+      aria-label="Открыть меню"
+      data-i18n-aria="ariaMenu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navigation">
+      <a href="#about" data-i18n="navAbout">О нас</a>
+      <a href="#menu" data-i18n="navMenu">Меню</a>
+      <a href="#gallery" data-i18n="navGallery">Галерея</a>
+      <a href="#contacts" data-i18n="navContacts">Контакты</a>
+      <a class="navigation-phone" href="tel:+996555341166">+996 555 34 11 66</a>
+    </nav>
+
+    <a class="header-phone" href="tel:+996555341166">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+      +996 555 34 11 66
+    </a>
+
+    <button class="language-button" type="button" aria-label="Switch to English">
+      EN
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-i18n="heroLabel">
+          КОФЕ · ВЫПЕЧКА · ВСТРЕЧИ
+        </p>
+
+        <h1>
+          Boris<br>
+          <em>Coffee &amp; Bakery</em>
+        </h1>
+
+        <p class="hero-text" data-i18n="heroText">
+          В Boris можно заглянуть на несколько минут, а потом незаметно остаться надолго.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="primary-button" href="#menu" data-i18n="heroMenu">
+            Смотреть меню
+          </a>
+
+          <a class="secondary-button" href="#contacts" data-i18n="heroMap">
+            Как нас найти ↓
+          </a>
+        </div>
+
+        <p class="hero-address">
+          <span data-i18n="heroAddress">Бишкек, бульвар Эркиндик, 14</span>
+          <a href="tel:+996555341166">+996 555 34 11 66</a>
+        </p>
+      </div>
+
+      <div class="coffee-to-go">
+        <span data-i18n="coffeeToGo">Кофе на вынос с</span>
+        <strong>07:30</strong>
+      </div>
+
+      <a class="scroll-link" href="#about">
+        <span></span>
+        scroll
+      </a>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-title reveal">
+        <p class="eyebrow" data-i18n="aboutLabel">
+          ЗАХОДИТЕ ЗА КОФЕ — ОСТАВАЙТЕСЬ ЗА АТМОСФЕРОЙ
+        </p>
+
+        <h2 data-i18n="aboutTitle">Boris — место для<br>вкусных моментов.</h2>
+      </div>
+
+      <div class="about-text reveal">
+        <p data-i18n="aboutText">
+          Boris — больше, чем просто кофейня. Это место для медленных завтраков, разговоров за чашкой кофе и маленьких пауз посреди насыщенного дня. Здесь сочетаются свежая выпечка, любимые завтраки и атмосфера, в которую хочется возвращаться снова.
+        </p>
+
+        <div class="locations">
+          <a class="location" href="#contacts">
+            <b>01</b>
+            <div>
+              <strong data-i18n="loc1Short">Бульвар Эркиндик, 14</strong>
+              <span>08:00 — 23:00</span>
+            </div>
+          </a>
+
+          <a class="location" href="#contacts">
+            <b>02</b>
+            <div>
+              <strong data-i18n="loc2Short">Улица Калыка Акиева</strong>
+              <span>08:00 — 00:00</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow" data-i18n="menuLabel">
+            СДЕЛАНО С ЛЮБОВЬЮ
+          </p>
+
+          <h2 data-i18n="menuTitle">
+            Меню на любой момент дня
+          </h2>
+        </div>
+
+        <p data-i18n="menuDescription">
+          Завтраки, горячие блюда, салаты, паста и пицца — всё самое любимое в одном месте.
+        </p>
+      </div>
+
+      <div class="menu-grid">
+        <!-- 01 Завтраки -->
+        <article class="menu-card reveal">
+          <div class="menu-card-image">
+            <img
+              src="images/menu-breakfast.jpg"
+              alt="Меню завтраков Boris Coffee & Bakery"
+              data-i18n-alt="altMenuBreakfast"
+              loading="lazy"
+            >
+
+            <div class="menu-card-image-content">
+              <p class="eyebrow" data-i18n="card1Label">ДО 16:00</p>
+
+              <h3 data-i18n="card1Title">Завтраки,<br>ради которых<br>стоит проснуться.</h3>
+
+              <button
+                class="open-menu-image"
+                type="button"
+                data-image="images/menu-breakfast.jpg"
+                data-i18n="openMenu"
+              >
+                Открыть полное меню ↗
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card-content">
+            <div class="menu-card-heading">
+              <span>01</span>
+              <h3 data-i18n="card1Heading">Завтраки</h3>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d1Name">Английский завтрак</span> <b>500с</b></h4>
+              <p data-i18n="d1Desc">Глазунья, колбаски, фасоль, томаты и тосты.</p>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d2Name">Французский завтрак</span> <b>580с</b></h4>
+              <p data-i18n="d2Desc">Круассан, глазунья, авокадо и томаты.</p>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d3Name">Скрэмбл с лососем</span> <b>690с</b></h4>
+              <p data-i18n="d3Desc">Скрэмбл, лосось, огурцы и авокадо.</p>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d4Name">Бельгийские вафли с лососем</span> <b>620с</b></h4>
+              <p data-i18n="d4Desc">Вафли, лосось, авокадо и кремчиз.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 Основные блюда и салаты -->
+        <article class="menu-card reveal">
+          <div class="menu-card-image">
+            <img
+              src="images/menu-main.jpg"
+              alt="Меню основных блюд и салатов Boris Coffee & Bakery"
+              data-i18n-alt="altMenuMain"
+              loading="lazy"
+            >
+
+            <div class="menu-card-image-content">
+              <p class="eyebrow">BORIS KITCHEN</p>
+
+              <h3 data-i18n="card2Title">Сытно.<br>Красиво.<br>По-домашнему.</h3>
+
+              <button
+                class="open-menu-image"
+                type="button"
+                data-image="images/menu-main.jpg"
+                data-i18n="openMenu"
+              >
+                Открыть полное меню ↗
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card-content">
+            <div class="menu-card-heading">
+              <span>02</span>
+              <h3 data-i18n="card2Heading">Горячее и салаты</h3>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d5Name">Судак с соусом терияки</span> <b>690с</b></h4>
+              <p data-i18n="d5Desc">Жареный судак, пюре и микс салата.</p>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d6Name">Стейк Рибай</span> <b>1480с</b></h4>
+              <p data-i18n="d6Desc">Стейк из говядины и картофель по-деревенски.</p>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d7Name">Тёплый салат с лососем</span> <b>510с</b></h4>
+              <p data-i18n="d7Desc">Лосось, кукуруза, авокадо и микс салата.</p>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d8Name">Цезарь с креветками</span> <b>650с</b></h4>
+              <p data-i18n="d8Desc">Креветки, черри, айсберг и пармезан.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 Паста, супы и пицца -->
+        <article class="menu-card reveal">
+          <div class="menu-card-image">
+            <img
+              src="images/menu-pasta-soups-pizza.jpg"
+              alt="Меню пасты, супов, пиццы и сэндвичей Boris Coffee & Bakery"
+              data-i18n-alt="altMenuPasta"
+              loading="lazy"
+            >
+
+            <div class="menu-card-image-content">
+              <p class="eyebrow" data-i18n="card3Label">ПАСТА · СУПЫ · ПИЦЦА</p>
+
+              <h3 data-i18n="card3Title">Горячо.<br>Щедро.<br>С душой.</h3>
+
+              <button
+                class="open-menu-image"
+                type="button"
+                data-image="images/menu-pasta-soups-pizza.jpg"
+                data-i18n="openMenu"
+              >
+                Открыть полное меню ↗
+              </button>
+            </div>
+          </div>
+
+          <div class="menu-card-content">
+            <div class="menu-card-heading">
+              <span>03</span>
+              <h3 data-i18n="card3Heading">Паста, супы и пицца</h3>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d9Name">Фетучини Альфредо</span> <b>490с</b></h4>
+              <p data-i18n="d9Desc">Паста в нежном сливочном соусе.</p>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d10Name">Том Ям с морепродуктами</span> <b>650с</b></h4>
+              <p data-i18n="d10Desc">Острый тайский суп с морепродуктами.</p>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d11Name">Борщ с мясом</span> <b>550с</b></h4>
+              <p data-i18n="d11Desc">Классический наваристый борщ.</p>
+            </div>
+
+            <div class="dish">
+              <h4><span data-i18n="d12Name">Пицца Пепперони</span> <b>510/590с</b></h4>
+              <p data-i18n="d12Desc">Два размера на выбор.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow" data-i18n="galleryLabel">
+            АТМОСФЕРА BORIS
+          </p>
+
+          <h2 data-i18n="galleryTitle">Моменты, которые<br>хочется сохранить</h2>
+        </div>
+
+        <p data-i18n="galleryDescription">
+          Кофе, свежая выпечка и тёплые встречи — каждый день.
+        </p>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <button
+          class="gallery-item gallery-tall"
+          type="button"
+          data-image="images/gallery-window.jpg"
+          aria-label="Открыть фотографию"
+          data-i18n-aria="ariaOpenPhoto"
+        >
+          <img
+            src="images/gallery-window.jpg"
+            alt="Уголок у окна с цветами в Boris"
+            data-i18n-alt="altWindow"
+            loading="lazy"
+          >
+        </button>
+
+        <button
+          class="gallery-item"
+          type="button"
+          data-image="images/gallery-flowers.jpg"
+          aria-label="Открыть фотографию"
+          data-i18n-aria="ariaOpenPhoto"
+        >
+          <img
+            src="images/gallery-flowers.jpg"
+            alt="Тюльпаны и картина в интерьере кофейни"
+            data-i18n-alt="altFlowers"
+            loading="lazy"
+          >
+        </button>
+
+        <button
+          class="gallery-item"
+          type="button"
+          data-image="images/gallery-hall.jpg"
+          aria-label="Открыть фотографию"
+          data-i18n-aria="ariaOpenPhoto"
+        >
+          <img
+            src="images/gallery-hall.jpg"
+            alt="Гости в зале кофейни Boris"
+            data-i18n-alt="altHall"
+            loading="lazy"
+          >
+        </button>
+
+        <button
+          class="gallery-item gallery-wide"
+          type="button"
+          data-image="images/gallery-corner.jpg"
+          aria-label="Открыть фотографию"
+          data-i18n-aria="ariaOpenPhoto"
+        >
+          <img
+            src="images/gallery-corner.jpg"
+            alt="Гостья работает за ноутбуком в уютном углу кофейни"
+            data-i18n-alt="altCorner"
+            loading="lazy"
+          >
+        </button>
+      </div>
+    </section>
+
+    <section class="contacts section" id="contacts">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow" data-i18n="contactsLabel">ЖДЁМ ВАС В ГОСТЯХ</p>
+          <h2 data-i18n="contactsTitle">Как нас найти</h2>
+        </div>
+
+        <p data-i18n="contactsDescription">
+          Две кофейни Boris в Бишкеке. Выберите удобную — карта покажет, как добраться.
+        </p>
+      </div>
+
+      <div class="contacts-grid reveal">
+        <div class="contacts-list">
+          <article
+            class="contact-card active"
+            data-map="42.867248,74.605111"
+            tabindex="0"
+          >
+            <div class="contact-card-top">
+              <b>01</b>
+              <div>
+                <h3 data-i18n="loc1Title">Бульвар Эркиндик, 14</h3>
+                <p data-i18n="loc1City">Бишкек, центр города</p>
+              </div>
+            </div>
+
+            <dl>
+              <div>
+                <dt data-i18n="hoursLabel">Часы работы</dt>
+                <dd><span data-i18n="daily">Ежедневно</span>, 08:00 — 23:00</dd>
+              </div>
+              <div>
+                <dt data-i18n="phoneLabel">Телефон</dt>
+                <dd><a href="tel:+996555341166">+996 555 34 11 66</a></dd>
+              </div>
+            </dl>
+
+            <div class="contact-actions">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=42.867248,74.605111"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="routeGoogle"
+              >Маршрут в Google Maps ↗</a>
+              <a
+                href="https://2gis.kg/bishkek/geo/74.605111,42.867248"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="route2gis"
+              >Открыть в 2ГИС ↗</a>
+            </div>
+          </article>
+
+          <article
+            class="contact-card"
+            data-map="42.873154,74.577191"
+            tabindex="0"
+          >
+            <div class="contact-card-top">
+              <b>02</b>
+              <div>
+                <h3 data-i18n="loc2Title">Улица Калыка Акиева</h3>
+                <p data-i18n="loc2City">Бишкек</p>
+              </div>
+            </div>
+
+            <dl>
+              <div>
+                <dt data-i18n="hoursLabel">Часы работы</dt>
+                <dd><span data-i18n="daily">Ежедневно</span>, 08:00 — 00:00</dd>
+              </div>
+              <div>
+                <dt data-i18n="phoneLabel">Телефон</dt>
+                <dd><a href="tel:+996558350001">+996 558 35 00 01</a></dd>
+              </div>
+            </dl>
+
+            <div class="contact-actions">
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=42.873154,74.577191"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="routeGoogle"
+              >Маршрут в Google Maps ↗</a>
+              <a
+                href="https://2gis.kg/bishkek/geo/74.577191,42.873154"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="route2gis"
+              >Открыть в 2ГИС ↗</a>
+            </div>
+          </article>
+
+          <a
+            class="whatsapp-button"
+            href="https://wa.me/996700911441"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></svg>
+            <span data-i18n="whatsapp">Написать в WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="map-frame">
+          <iframe
+            title="Карта: Boris Coffee & Bakery"
+            src="https://maps.google.com/maps?q=42.867248,74.605111&z=16&hl=ru&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-logo">
+      BORIS
+      <span>COFFEE &amp; BAKERY</span>
+    </div>
+
+    <div class="footer-column">
+      <p class="eyebrow" data-i18n="footerLabel">ЗАХОДИТЕ НА КОФЕ</p>
+      <p class="footer-address" data-i18n="footerAddress">Бишкек, бульвар Эркиндик, 14<br>Бишкек, улица Калыка Акиева</p>
+    </div>
+
+    <div class="footer-column">
+      <p class="eyebrow" data-i18n="footerContacts">НА СВЯЗИ</p>
+      <a class="footer-link" href="tel:+996555341166">+996 555 34 11 66</a>
+
+      <div class="social-links">
+        <a href="https://wa.me/996700911441" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a href="https://www.instagram.com/boriscoffeekg" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+    </div>
+
+    <small>© 2026 Boris Coffee &amp; Bakery</small>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true">
+    <button
+      class="lightbox-close"
+      type="button"
+      aria-label="Закрыть фотографию"
+      data-i18n-aria="ariaClose"
+    >
+      ×
+    </button>
+
+    <img src="" alt="">
+  </div>
+</body>
+</html>
